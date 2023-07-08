@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Quiz</h1>
+  <br>
+  <button id="startButton" onclick="startQuiz()">Start</button>
+  <br>
+  <div id="question"></div>
+  <input type="text" id="answer" />
+  <button onclick="checkAnswer()">Submit</button>
+  <button onclick="challengeAgain()">Challenge Again</button>
+  <div id="result"></div>
+  <br>
+  
+  <hr>
+  <h2>Manage Quiz Content</h2>
+  <label>Question:</label>
+  <input type="text" id="newQuestion" />
+  <label>Answer:</label>
+  <input type="text" id="newAnswer" />
+  <button onclick="addQuestion()">Add Question</button>
+  <button onclick="showDeleteQuestionList()">Delete Question</button>
+  <button onclick="undoDelete()">Undo</button>
+  
+  <div id="answerList"></div>
+
+  <br>
+  <button onclick="showAnswerList()">Show All Answers</button>
+  <button onclick="challengeAgain()">Challenge Again</button>
+  <div id="deleteQuestionList"></div>
+
+  <script src="script14.js"></script>
+</body>
+</html>
